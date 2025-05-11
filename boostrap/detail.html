@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail Buku - Toko Buku Indra</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <style>
+    .book-img {
+      max-height: 500px;
+      object-fit: cover;
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .rating i {
+      color: #ffc107;
+    }
+
+    .btn-back {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"><i class="bi bi-book-half me-2"></i>Toko Buku Indra</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Detail Buku -->
+  <main class="container my-5 flex-grow-1">
+    <a href="index.html" class="btn btn-outline-secondary btn-back"><i class="bi bi-arrow-left me-1"></i>Kembali ke Beranda</a>
+    <div class="row align-items-center g-4">
+      <div class="col-md-5">
+        <img src="img/laskar-pelangi.jpg" alt="Laskar Pelangi" class="book-img shadow-sm" />
+      </div>
+      <div class="col-md-7">
+        <h2 class="fw-bold">Laskar Pelangi</h2>
+        <div class="d-flex align-items-center mb-3">
+          <span class="badge bg-success me-2">Tersedia</span>
+          <div class="rating">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star"></i>
+          </div>
+        </div>
+        <p class="text-muted">Kisah inspiratif anak-anak Belitung karya Andrea Hirata, menggambarkan semangat belajar dalam keterbatasan dan nilai-nilai kehidupan yang menyentuh hati.</p>
+        <p><strong>Penulis:</strong> Andrea Hirata</p>
+        <p><strong>Penerbit:</strong> Bentang Pustaka</p>
+        <p><strong>Jumlah Halaman:</strong> 529</p>
+        <p><strong>Genre:</strong> Fiksi, Inspiratif</p>
+        <p><strong>Harga:</strong> <span class="text-danger fw-bold">Rp 85.000</span></p>
+        <button class="btn btn-primary mt-3"><i class="bi bi-cart-plus me-2"></i>Tambahkan ke Keranjang</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white mt-auto py-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h5><i class="bi bi-book-half me-2"></i>Toko Buku Indra</h5>
+          <p class="text-white-50">Menyediakan buku berkualitas untuk kebutuhan literasi modern.</p>
+        </div>
+        <div class="col-md-6">
+          <h5>Kontak Kami</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-geo-alt me-2"></i>Jl. Literasi No. 123</li>
+            <li><i class="bi bi-envelope me-2"></i>info@tokobukuindra.com</li>
+            <li><i class="bi bi-phone me-2"></i>+62 812 3456 7890</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="mt-4 border-light" />
+      <p class="text-center text-white-50 mb-0">&copy; 2025 Toko Buku Indra. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

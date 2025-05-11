@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toko Buku Indra</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <style>
+    .banner-img {
+      height: 400px;
+      object-fit: cover;
+      filter: brightness(0.75);
+    }
+
+    .card-img-top {
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover .card-img-top {
+      transform: scale(1.05);
+    }
+
+    .card:hover {
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      transition: 0.3s;
+    }
+
+    .rating i {
+      color: #ffc107;
+    }
+
+    .badge {
+      font-size: 0.8rem;
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100 bg-light">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"><i class="bi bi-book-half me-2"></i>Toko Buku Indra</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <div class="container-fluid px-0">
+    <div class="position-relative">
+      <img src="img/banner3.png" class="banner-img w-100" alt="Banner Toko Buku" />
+      <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+        <h1 class="display-4 fw-bold">Selamat Membaca!</h1>
+        <p class="lead">Temukan buku terbaik untuk pengembangan dirimu</p>
+        <a href="#koleksi" class="btn btn-outline-light mt-3">Lihat Koleksi</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Koleksi Buku -->
+  <main class="container my-5 flex-grow-1" id="koleksi">
+    <h2 class="text-center mb-5 fw-bold fade-in">Koleksi Buku Terbaik</h2>
+    <div class="row g-4 fade-in">
+      <!-- Buku 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="img/bumi.jpg" class="card-img-top" alt="Bumi" />
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-3">
+              <span class="badge bg-success">Tersedia</span>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+              </div>
+            </div>
+            <h5 class="fw-bold">Bumi</h5>
+            <p class="text-muted">Petualangan Raib ke dunia paralel penuh misteri dan keajaiban.</p>
+            <a href="#" class="btn btn-primary w-100"><i class="bi bi-eye me-2"></i>Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Buku 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="img/laskar-pelangi.jpg" class="card-img-top" alt="Laskar Pelangi" />
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-3">
+              <span class="badge bg-success">Tersedia</span>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+              </div>
+            </div>
+            <h5 class="fw-bold">Laskar Pelangi</h5>
+            <p class="text-muted">Kisah inspiratif anak-anak Belitung karya Andrea Hirata.</p>
+            <a href="detail.html" class="btn btn-primary w-100"><i class="bi bi-eye me-2"></i>Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Buku 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="img/negri-5-menara.jpeg" class="card-img-top" alt="Negeri 5 Menara" />
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-3">
+              <span class="badge bg-success">Tersedia</span>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i><i class="bi bi-star"></i>
+              </div>
+            </div>
+            <h5 class="fw-bold">Negeri 5 Menara</h5>
+            <p class="text-muted">Perjalanan mimpi dan pendidikan di pesantren.</p>
+            <a href="#" class="btn btn-primary w-100"><i class="bi bi-eye me-2"></i>Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Buku 4 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="img/perahu-kertas.jpeg" class="card-img-top" alt="Perahu Kertas" />
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-3">
+              <span class="badge bg-success">Tersedia</span>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i><i class="bi bi-star"></i>
+              </div>
+            </div>
+            <h5 class="fw-bold">Perahu Kertas</h5>
+            <p class="text-muted">Kisah cinta dan perjalanan hidup dua remaja unik.</p>
+            <a href="#" class="btn btn-primary w-100"><i class="bi bi-eye me-2"></i>Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Buku 5 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="img/dilan.jpeg" class="card-img-top" alt="Dilan" />
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-3">
+              <span class="badge bg-success">Tersedia</span>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i><i class="bi bi-star"></i>
+              </div>
+            </div>
+            <h5 class="fw-bold">Dilan 1990</h5>
+            <p class="text-muted">Romansa remaja SMA dengan gaya bahasa khas Bandung.</p>
+            <a href="#" class="btn btn-primary w-100"><i class="bi bi-eye me-2"></i>Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Buku 6 - Atomic Habits -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="img/buku1.jpg" class="card-img-top" alt="Atomic Habits" />
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-3">
+              <span class="badge bg-success">Tersedia</span>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+              </div>
+            </div>
+            <h5 class="fw-bold">Atomic Habits</h5>
+            <p class="text-muted">Perubahan kecil yang membawa dampak besar dalam hidup Anda.</p>
+            <a href="#" class="btn btn-primary w-100"><i class="bi bi-eye me-2"></i>Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white mt-auto py-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h5><i class="bi bi-book-half me-2"></i>Toko Buku Indra</h5>
+          <p class="text-white-50">Menyediakan buku berkualitas untuk kebutuhan literasi modern.</p>
+        </div>
+        <div class="col-md-6">
+          <h5>Kontak Kami</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-geo-alt me-2"></i>Jl. Literasi No. 123</li>
+            <li><i class="bi bi-envelope me-2"></i>info@tokobukuindra.com</li>
+            <li><i class="bi bi-phone me-2"></i>+62 812 3456 7890</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="mt-4 border-light" />
+      <p class="text-center text-white-50 mb-0">&copy; 2025 Toko Buku Indra. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
